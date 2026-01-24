@@ -1,0 +1,20 @@
+{
+  "name": "uihoh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KOCTA2024/uihoh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KOCTA2024/uihoh/issues"
+  },
+  "homepage": "https://github.com/KOCTA2024/uihoh#readme"
+}
