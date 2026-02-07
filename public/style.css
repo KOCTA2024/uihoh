@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-100:#1F3A5F;
+    --primary-200:#4d648d;
+    --primary-300:#acc2ef;
+    --accent-100:#3D5A80;
+    --accent-200:#cee8ff;
+    --text-100:#FFFFFF;
+    --text-200:#e0e0e0;
+    --bg-100:#0F1C2E;
+    --bg-200:#1f2b3e;
+    --bg-300:#374357;
+}
+
+body{
+    font-family: "SN Pro", sans-serif;
+    background-color: var(--bg-100);
+    color: var(--text-100);
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+
+}
+
+header {
+    background-color: var(--primary-100);
+    color:var(bg-200);
+    padding:1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+header .logo{
+    height: 5rem;
+}
+
+main {
+    background-color: var(--primary-300);
+    flex-grow: 1;
+    margin:1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.jokes {
+    flex-grow: 1;
+    display: grid;
+    min-height: 63vh;
+    overflow-y: scroll;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0.5rem;
+
+}
+
+form{
+    display:flex;
+    gap:0.3rem;
+}
+
+form input{
+    flex-grow: 1;
+    border: none;
+    background-color: var(--bg-100);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+form button{
+    border:none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.like, .dislike{
+    background: none;
+    border: none;
+}
+.jokes .buttons{
+    
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.3rem;
+}
+
+.joke  {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+}
+.joke button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;;
+}

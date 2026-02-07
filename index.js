@@ -8,6 +8,7 @@ const { buffer } = require("stream/consumers")
 let dataPath = path.join(__dirname, "data")
 
 let server = http.createServer((req, res)=>{
+    res.setHeader("Access-Control-Allow-Origin", "*")
     switch(req.url){
         case "/jokes":
             if (req.method == "GET") getJokes(req, res)
